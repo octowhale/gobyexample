@@ -18,3 +18,8 @@ func Test_Insert(t *testing.T) {
 	// NewConn(dsn)
 	dbExec()
 }
+
+func Test_Prepare(t *testing.T) {
+	// NewConn(dsn)
+	Prepare()
+}

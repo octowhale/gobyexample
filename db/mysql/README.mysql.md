@@ -22,3 +22,13 @@ services:
 ```go
 go get -u github.com/go-sql-driver/mysql
 ```
+
+## 简单用法
+
++ init_db: [main.go](main.go)
++ query: query.go
++ insert/delete/update: insert.go
+
+
+## MySQL 预处理
+1. 先编译sql, 在传入变量。 类似 `regex.Compile`。
