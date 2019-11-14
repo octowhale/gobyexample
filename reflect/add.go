@@ -20,3 +20,14 @@ func Add(t1 interface{}, t2 interface{}) (ret interface{}) {
 	}
 	return
 }
+
+func compare(t1 interface{}) {
+	t1type := reflect.ValueOf(t1).Type()
+	t2type := reflect.ValueOf(2).Type()
+	if t1type == t2type {
+		fmt.Printf("%v 是 int 类型\n", reflect.TypeOf(t1).Name())
+	} else {
+		fmt.Printf("%v 不是 int 类型\n", reflect.TypeOf(t1).Name())
+	}
+
+}
